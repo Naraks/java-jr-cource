@@ -8,13 +8,14 @@ public class Sum2
 		{
 			System.out.println("Error");
 		}
-		
-		float sum = 0;		
-		for (String i : args)
-		{
-			float a = Float.valueOf(i);			
-			sum += a;
+		else {
+			float sum = 0;		
+			for (String i : args)
+			{
+				float a = Float.valueOf(i);			
+				sum += a;
+			}
+			System.out.printf("%,.2f", sum);
 		}
-		System.out.printf("%,.2f", sum);
 	}	
 }
